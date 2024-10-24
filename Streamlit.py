@@ -91,7 +91,7 @@ learning_rate = 0.518
 depth = 9
 l2_leaf_reg = 9
         
-cat_clf_n = CatBoostRegressor(iterations =n_estimators,learning_rate = learning_rate, depth=depth,l2_leaf_reg=l2_leaf_reg, random_state=42)
+cat_clf_n = CatBoostRegressor(n_estimators =n_estimators,learning_rate = learning_rate, depth=depth,l2_leaf_reg=l2_leaf_reg, random_state=42)
 cat_clf_n.fit(X_train, y_train)
 
 
