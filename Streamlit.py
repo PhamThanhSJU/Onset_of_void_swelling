@@ -33,7 +33,7 @@ st.title ("Hybrid machine learning model using HHO algorithm for predicting the 
 #Make a prediction
 st.header("Predicting the onset of void swelling in irradiated metals")
 st.subheader("Input variables")
-col1, col2, col3, col4 =st.columns(4)
+col1, col2, col3, col4 =st.columns(7)
 with col1:
    X1=st.slider("Fe (wt. %)", 0, 97.0)
    X2 = st.slider("Cr (wt. %)", 0, 24.7)
