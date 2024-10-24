@@ -95,12 +95,14 @@ cat_clf_n = CatBoostRegressor(n_estimators =n_estimators,learning_rate = learnin
 cat_clf_n.fit(X_train, y_train)
 
 
-Inputdata1 = [X1, X2, X3, X4, X5, X6, X7,X8, X9, X10, X11, X12, X13, X14, X15, X16, X17,X18, X19, X20, X21, X22, X23, X24, X25*(10**14),X26]
-Inputdata=scaler.transform(Inputdata1)
+Inputdata = [X1, X2, X3, X4, X5, X6, X7,X8, X9, X10, X11, X12, X13, X14, X15, X16, X17,X18, X19, X20, X21, X22, X23, X24, X25*(10**14),X26]
+
 
 from numpy import asarray
-Newdata = asarray([Inputdata])
-print(Newdata)
+Newdata1 = asarray([Inputdata])
+print(Newdata1)
+Newdata=scaler.transform(Newdata1)
+
 fc_pred2 = cat_clf_n.predict(Newdata)
 
 st.subheader("Output variable")
