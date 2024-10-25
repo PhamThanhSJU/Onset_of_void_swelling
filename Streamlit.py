@@ -39,7 +39,7 @@ with col1:
    X2 = st.slider("Cr (wt. %)", 0.00, 24.70)
    X3= st.slider("Mn (wt. %)", 0.00, 20.00)
    X4 = st.slider("Si (wt. %)", 0.00, 1.50)
-   X5 = st.slider("Co (wt. %)", 0.00, 0.04)
+   X5 = st.slider("Co /100 (wt. %)", 0.00, 4.00)
    X6= st.slider("Mo (wt. %)", 0.00, 2.95)
    X7 = st.slider("Ni (wt. %)", 0.00, 100.00)
 
@@ -47,9 +47,9 @@ with col2:
    X8=st.slider("C (wt. %)", 0.00, 1.00)
    X9 = st.slider("Ti (wt. %)", 0.0, 2.20)
    X10= st.slider("N (wt. %)", 0.00, 0.30)
-   X11 = st.slider("B (wt. %)", 0.0000, 0.0040)
-   X12 = st.slider("P (wt. %)", 0.0000, 0.1550)
-   X13= st.slider("S (wt. %)", 0.00, 0.030)
+   X11 = st.slider("B /1000 (wt. %)", 0.00, 4.00)
+   X12 = st.slider("P /100 (wt. %)", 0.00, 15.50)
+   X13= st.slider("S /100 (wt. %)", 0.00, 3.00)
    X14 = st.slider("Nb (wt. %)", 0.00, 0.92)   
 	
 with col3:
@@ -62,7 +62,7 @@ with col3:
    X21 = st.slider("Zr (wt. %)", 0.00, 0.10)  
 
 with col4:	
-   X22=st.slider("Dose rate (dpa/s)", 0.000, 0.061)
+   X22=st.slider("Dose rate /1000 (dpa/s)", 0.000, 60.00)
    X23 = st.slider("Temperature (K)", 393.5, 1013.5)
    X24= st.slider("Irradiation type [1-4]", 1, 4)
    X25 = st.slider("Dis. den. x10^14 (m−2)", 0.30, 38.50)
@@ -95,7 +95,7 @@ cat_clf_n = CatBoostRegressor(n_estimators =n_estimators,learning_rate = learnin
 cat_clf_n.fit(X_train, y_train)
 
 
-Inputdata = [X1, X2, X3, X4, X5, X6, X7,X8, X9, X10, X11, X12, X13, X14, X15, X16, X17,X18, X19, X20, X21, X22, X23, X24, X25*(10**14),X26]
+Inputdata = [X1, X2, X3, X4, X5/100, X6, X7,X8, X9, X10, X11/1000, X12/100, X13/100, X14, X15, X16, X17,X18, X19, X20, X21, X22/1000, X23, X24, X25*(10**14),X26]
 
 
 from numpy import asarray
