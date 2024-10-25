@@ -33,36 +33,41 @@ st.title ("Hybrid machine learning model using HHO algorithm for predicting the 
 #Make a prediction
 st.header("Predicting the onset of void swelling in irradiated metals")
 st.subheader("Input variables")
-col1, col2, col3, col4 =st.columns(4)
+col1, col2, col3, col4, col5, col6 =st.columns(6)
 with col1:
    X1=st.slider("Fe (wt. %)", 0.00, 97.00)
    X2 = st.slider("Cr (wt. %)", 0.00, 24.70)
    X3= st.slider("Mn (wt. %)", 0.00, 20.00)
    X4 = st.slider("Si (wt. %)", 0.00, 1.50)
    X5 = st.slider("Co /100 (wt. %)", 0.00, 4.00)
+	
+with col2:	
+
    X6= st.slider("Mo (wt. %)", 0.00, 2.95)
    X7 = st.slider("Ni (wt. %)", 0.00, 100.00)
-
-with col2:
-   X8=st.slider("C (wt. %)", 0.00, 1.00)
+   X8=st.slider("C (wt. %)", 0.00, 1.00)	
    X9 = st.slider("Ti (wt. %)", 0.0, 2.20)
    X10= st.slider("N (wt. %)", 0.00, 0.30)
+
+with col3:		
    X11 = st.slider("B /1000 (wt. %)", 0.00, 4.00)
    X12 = st.slider("P /100 (wt. %)", 0.00, 15.50)
    X13= st.slider("S /100 (wt. %)", 0.00, 3.00)
    X14 = st.slider("Nb (wt. %)", 0.00, 0.92)   
-	
-with col3:
-   X15=st.slider("Cu (wt. %)", 0.00, 0.54)
+
+with col4:	
+   X15=st.slider("Cu (wt. %)", 0.00, 0.54)	
    X16 = st.slider("Ta (wt. %)", 0.00, 0.36)
    X17= st.slider("Al (wt. %)", 0.00, 100.00)
    X18 = st.slider("V (wt. %)", 0.00, 2.00)
-   X19 = st.slider("Mg (wt. %)", 0.00, 1.63)
-   X20= st.slider("W (wt. %)", 0.00, 2.40)
-   X21 = st.slider("Zr (wt. %)", 0.00, 0.10)  
 
-with col4:	
+with col5:		
+   X19 = st.slider("Mg (wt. %)", 0.00, 1.63)
+   X20= st.slider("W (wt. %)", 0.00, 2.40)	
+   X21 = st.slider("Zr (wt. %)", 0.00, 0.10)  
    X22=st.slider("Dose rate /1000 (dpa/s)", 0.000, 60.00)
+
+with col6:	
    X23 = st.slider("Temperature (K)", 393.5, 1013.5)
    X24= st.slider("Irradiation type [1-4]", 1, 4)
    X25 = st.slider("Dis. den. x10^14 (m−2)", 0.30, 38.50)
