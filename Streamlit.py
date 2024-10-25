@@ -54,23 +54,23 @@ with col3:
    X12 = st.slider("P /100 (wt. %)", 0.00, 15.50)
    X13= st.slider("S /100 (wt. %)", 0.00, 3.00)
    X14 = st.slider("Nb (wt. %)", 0.00, 0.92)   
-
-with col4:	
    X15=st.slider("Cu (wt. %)", 0.00, 0.54)	
+	
+with col4:	
    X16 = st.slider("Ta (wt. %)", 0.00, 0.36)
    X17= st.slider("Al (wt. %)", 0.00, 100.00)
    X18 = st.slider("V (wt. %)", 0.00, 2.00)
-
-with col5:		
    X19 = st.slider("Mg (wt. %)", 0.00, 1.63)
    X20= st.slider("W (wt. %)", 0.00, 2.40)	
+
+with col5:	
    X21 = st.slider("Zr (wt. %)", 0.00, 0.10)  
    X22=st.slider("Dose rate /1000 (dpa/s)", 0.000, 60.00)
-
-with col6:	
    X23 = st.slider("Temperature (K)", 393.5, 1013.5)
+	
+with col6:	
    X24= st.slider("Irradiation type [1-4]", 1, 4)
-   X25 = st.slider("Dis. den. x10^14 (m−2)", 0.30, 38.50)
+   X25 = st.slider("Dislocation density x10^14 (m−2)", 0.30, 38.50)
    X26 = st.slider("Pre-injected He (appm)", 0.00, 100.00)
 
 
