@@ -62,9 +62,9 @@ with col3:
    X21 = st.slider("Zr (wt. %)", 0.00, 0.10)  
 
 with col4:	
-   X22=st.slider("Dose rate (dpa/s)", 0.00, 97.00)
-   X23 = st.slider("Temperature (K)", 0.00, 24.70)
-   X24= st.slider("Irradiation type", 1, 4)
+   X22=st.slider("Dose rate (dpa/s)", 0.000, 0.060)
+   X23 = st.slider("Temperature (K)", 393.5, 1013.5)
+   X24= st.slider("Irradiation type [1-4]", 1, 4)
    X25 = st.slider("Dislocation density x10^14 (m−2)", 0.30, 38.50)
    X26 = st.slider("Pre-injected He (appm)", 0.00, 100.00)
 
