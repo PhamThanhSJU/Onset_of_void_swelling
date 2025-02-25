@@ -97,7 +97,7 @@ predictions = []
 from numpy import asarray
 X_predict = asarray([Inputdata])
   
-for i in range(1,11,1):
+for i in range(1,6,1):
     count = i
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.10, random_state=(0+i))
     
